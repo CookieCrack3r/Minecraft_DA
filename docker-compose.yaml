@@ -8,6 +8,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./data:/data
-      - ./server.properties:/data/server.properties
+      - mc-data:/data
 
+volumes:
+  mc-data:
